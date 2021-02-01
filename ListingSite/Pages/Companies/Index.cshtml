@@ -1,0 +1,19 @@
+﻿@page 
+@model ListingSite.Pages.Companies.IndexModel
+@{
+    ViewData["Title"] = "Index";
+    ViewData["ShowButtons"] = true;
+}
+
+    <style>
+        .btn {
+            width: 75px;
+        }
+    </style>
+<h1>Employees</h1>
+<div class="card-deck">
+    @foreach (var employee in Model.Employees)
+    {
+        <partial name="_DisplayEmployeePartial" model="employee" view-data="ViewData"/>
+    }
+</div>
