@@ -27,7 +27,7 @@ using Listing.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f007ea644b88683f7145293c29d24466f10a7d83", @"/Pages/Shared/_DisplayEmployeePartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0c44fcefa425e2d959918ddbb0327a50384226b2", @"/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fc62a4dbf30ac16bf6afcd9315520561e6ddd356", @"/Pages/_ViewImports.cshtml")]
     public class Pages_Shared__DisplayEmployeePartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Employee>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("card-img-top imageThumbnail"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);

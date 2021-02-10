@@ -1,19 +1,30 @@
-﻿@page 
-@model ListingSite.Pages.Companies.IndexModel
-@{
-    ViewData["Title"] = "Index";
-    ViewData["ShowButtons"] = true;
-}
+﻿@page
 
-    <style>
-        .btn {
-            width: 75px;
-        }
-    </style>
+@model ListingSite.Pages.Companies.IndexModel
+@{ ViewData["Title"] = "Index";
+                ViewData["ShowButtons"] = true; }
+
+<style>
+    .btn {
+        width: 75px;
+    }
+</style>
+
+<form method="get">
+    <div class="input-group">
+        <input class="form-control" asp-for="SearchTerm"/>
+        <div class="input-group-append">
+            <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+    </div>
+</form>
+
+@await Component.InvokeAsync("Headcount")
+@*<vc:headcount department-name="@null"></vc:headcount>*@
+
 <h1>Employees</h1>
 <div class="card-deck">
     @foreach (var employee in Model.Employees)
     {
-        <partial name="_DisplayEmployeePartial" model="employee" view-data="ViewData"/>
-    }
+<partial name="_DisplayEmployeePartial" model="employee" view-data="ViewData" />}
 </div>

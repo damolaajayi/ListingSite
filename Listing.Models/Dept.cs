@@ -7,6 +7,7 @@ namespace Listing.Models
         None,
         HR,
         IT,
-        Payroll
+        Payroll,
+        Value
     }
 }

@@ -57,7 +57,7 @@ namespace ListingSite.Pages.Companies
             return Page();
         }
 
-        public IActionResult OnPost()
+        public IActionResult OnPost(Employee employee)
         {
             if (ModelState.IsValid)
             {
@@ -73,8 +73,7 @@ namespace ListingSite.Pages.Companies
                     Employee.PhotoPath = ProcessUploadedFile();
                 }
 
-                // If Employee ID > 0, call Update() to update existing 
-                // employee details else call Add() to add new employee
+                
                 if (Employee.Id > 0)
                 {
                     Employee = employeeRepository.Update(Employee);
@@ -111,7 +110,8 @@ namespace ListingSite.Pages.Companies
 
             if (Photo != null)
             {
-                string uploadsFolder = Path.Combine(webHostEnvironment.WebRootPath, "images");
+                string uploadsFolder = 
+                    Path.Combine(webHostEnvironment.WebRootPath, "images");
                 uniqueFileName = Guid.NewGuid().ToString() + "_" + Photo.FileName;
                 string filePath = Path.Combine(uploadsFolder, uniqueFileName);
                 using (var fileStream = new FileStream(filePath, FileMode.Create))

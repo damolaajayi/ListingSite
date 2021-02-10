@@ -69,14 +69,30 @@ namespace Listing.Services
             return newEmployee;
         }
 
-        public IEnumerable<DeptHeadCount> EmployeeCountByDept()
+        public IEnumerable<DeptHeadCount> EmployeeCountByDept(Dept? dept)
         {
-            return _employeeList.GroupBy(e => e.Department)
+            IEnumerable<Employee> query = _employeeList;
+            if(dept.HasValue)
+            {
+                query = query.Where(e => e.Department == Dept.Value);
+            }
+            return query.GroupBy(e => e.Department)
                                 .Select(g => new DeptHeadCount()
                                 {
                                     Department = g.Key.Value,
                                     Count = g.Count()
                                 }).ToList();
         }
+
+        public IEnumerable<Employee> Search(string searchTerm = null)
+        {
+            if(string.IsNullOrEmpty(searchTerm))
+            {
+                return _employeeList;
+            }
+            return _employeeList.Where(e => e.Name.Contains(searchTerm) ||
+                                e.Email.Contains(searchTerm)).ToList();
+        }
     }
 }
+

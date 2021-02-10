@@ -1,4 +1,4 @@
-﻿@page
+﻿@page "/employees/view/{id:min(1)}"
 @model ListingSite.Pages.Companies.DetailsModel
 @{
     ViewData["Title"] = "Details";
@@ -8,27 +8,31 @@
 
 <div class="row justify-content-center m-3">
     <div class="col-sm-8">
-        <div class="card">
-            <div class="card-header">
-                <h1>@Model.Employee.Name</h1>
-            </div>
+        @await Component.InvokeAsync("Headcount", new { department = Model.Employee.Department })
+        @*<vc:headcount department-name="@Model.Employee.Department"></vc:headcount>*@
+    </div>
+            <div class="col-sm-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h1>@Model.Employee.Name</h1>
+                    </div>
 
-            <div class="card-body text-center">
-                <img class="card-img-top" src="@photoPath" asp-append-version="true" />
+                    <div class="card-body text-center">
+                        <img class="card-img-top" src="@photoPath" asp-append-version="true" />
 
-                <h4>Employee ID : @Model.Employee.Id</h4>
-                <h4>Email : @Model.Employee.Email</h4>
-                <h4>Department : @Model.Employee.Department</h4>
+                        <h4>Employee ID : @Model.Employee.Id</h4>
+                        <h4>Email : @Model.Employee.Email</h4>
+                        <h4>Department : @Model.Employee.Department</h4>
 
-            </div>
-            <div class="card-footer text-center">
-                <a asp-page="index"
-                   class="btn btn-primary">Back</a>
-                <a asp-page="edit" 
-                   class="btn btn-primary">Edit</a>
-                <a asp-page="delete" 
-                   class="btn btn-danger">Delete</a>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a asp-page="index"
+                           class="btn btn-primary">Back</a>
+                        <a asp-page="edit"
+                           class="btn btn-primary">Edit</a>
+                        <a asp-page="delete"
+                           class="btn btn-danger">Delete</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
