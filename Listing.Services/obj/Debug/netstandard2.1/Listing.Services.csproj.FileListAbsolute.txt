@@ -1,0 +1,12 @@
+C:\Users\User\Desktop\ListingSite-main\Listing.Services\bin\Debug\netstandard2.1\Listing.Services.deps.json
+C:\Users\User\Desktop\ListingSite-main\Listing.Services\bin\Debug\netstandard2.1\Listing.Services.dll
+C:\Users\User\Desktop\ListingSite-main\Listing.Services\bin\Debug\netstandard2.1\Listing.Services.pdb
+C:\Users\User\Desktop\ListingSite-main\Listing.Services\bin\Debug\netstandard2.1\Listing.Models.dll
+C:\Users\User\Desktop\ListingSite-main\Listing.Services\bin\Debug\netstandard2.1\Listing.Models.pdb
+C:\Users\User\Desktop\ListingSite-main\Listing.Services\obj\Debug\netstandard2.1\Listing.Services.csprojAssemblyReference.cache
+C:\Users\User\Desktop\ListingSite-main\Listing.Services\obj\Debug\netstandard2.1\Listing.Services.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\ListingSite-main\Listing.Services\obj\Debug\netstandard2.1\Listing.Services.AssemblyInfo.cs
+C:\Users\User\Desktop\ListingSite-main\Listing.Services\obj\Debug\netstandard2.1\Listing.Services.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\ListingSite-main\Listing.Services\obj\Debug\netstandard2.1\Listing.Services.csproj.CopyComplete
+C:\Users\User\Desktop\ListingSite-main\Listing.Services\obj\Debug\netstandard2.1\Listing.Services.dll
+C:\Users\User\Desktop\ListingSite-main\Listing.Services\obj\Debug\netstandard2.1\Listing.Services.pdb

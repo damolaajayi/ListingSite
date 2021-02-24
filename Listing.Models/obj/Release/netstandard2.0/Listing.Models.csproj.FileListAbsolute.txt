@@ -1,0 +1,9 @@
+C:\Users\User\Desktop\ListingSite-main\Listing.Models\bin\Release\netstandard2.0\Listing.Models.deps.json
+C:\Users\User\Desktop\ListingSite-main\Listing.Models\bin\Release\netstandard2.0\Listing.Models.dll
+C:\Users\User\Desktop\ListingSite-main\Listing.Models\bin\Release\netstandard2.0\Listing.Models.pdb
+C:\Users\User\Desktop\ListingSite-main\Listing.Models\obj\Release\netstandard2.0\Listing.Models.csprojAssemblyReference.cache
+C:\Users\User\Desktop\ListingSite-main\Listing.Models\obj\Release\netstandard2.0\Listing.Models.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\ListingSite-main\Listing.Models\obj\Release\netstandard2.0\Listing.Models.AssemblyInfo.cs
+C:\Users\User\Desktop\ListingSite-main\Listing.Models\obj\Release\netstandard2.0\Listing.Models.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\ListingSite-main\Listing.Models\obj\Release\netstandard2.0\Listing.Models.dll
+C:\Users\User\Desktop\ListingSite-main\Listing.Models\obj\Release\netstandard2.0\Listing.Models.pdb

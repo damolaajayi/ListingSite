@@ -1,7 +1,6 @@
 ﻿using Listing.Models;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -9,9 +8,9 @@ namespace Listing.Services
 {
     public class SQLEmployeeRepository : IEmployeeRepository
     {
-        private readonly AppDbContext context;
+        private readonly ApplicationDbContext context;
 
-        public SQLEmployeeRepository(AppDbContext context)
+        public SQLEmployeeRepository(ApplicationDbContext context)
         {
             this.context = context;
         }
