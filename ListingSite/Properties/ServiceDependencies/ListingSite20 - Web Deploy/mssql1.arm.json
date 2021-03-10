@@ -4,7 +4,7 @@
   "parameters": {
     "resourceGroupName": {
       "type": "string",
-      "defaultValue": "myResourceGroup",
+      "defaultValue": "cloud-shell-storage-westeurope",
       "metadata": {
         "_parameterType": "resourceGroup",
         "description": "Name of the resource group for the resource. It is recommended to put resources under same resource group for better tracking."
@@ -36,7 +36,7 @@
     },
     {
       "type": "Microsoft.Resources/deployments",
-      "name": "[concat(parameters('resourceGroupName'), 'Deployment', uniqueString(concat('ListingSitevault', subscription().subscriptionId)))]",
+      "name": "[concat(parameters('resourceGroupName'), 'Deployment', uniqueString(concat('ListingSite_db', subscription().subscriptionId)))]",
       "resourceGroup": "[parameters('resourceGroupName')]",
       "apiVersion": "2019-10-01",
       "dependsOn": [
@@ -49,21 +49,26 @@
           "contentVersion": "1.0.0.0",
           "resources": [
             {
-              "name": "ListingSitevault",
-              "type": "Microsoft.KeyVault/vaults",
+              "kind": "v12.0",
               "location": "[parameters('resourceLocation')]",
-              "properties": {
-                "sku": {
-                  "family": "A",
-                  "name": "Standard"
-                },
-                "tenantId": "c45856e4-5acb-4b72-94a5-cd2edadf3501",
-                "accessPolicies": [],
-                "enabledForDeployment": true,
-                "enabledForDiskEncryption": true,
-                "enabledForTemplateDeployment": true
+              "name": "listingsitedb",
+              "type": "Microsoft.Sql/servers",
+              "apiVersion": "2017-10-01-preview"
+            },
+            {
+              "sku": {
+                "name": "Standard",
+                "tier": "Standard",
+                "capacity": 10
               },
-              "apiVersion": "2016-10-01"
+              "kind": "v12.0,user",
+              "location": "[parameters('resourceLocation')]",
+              "name": "listingsitedb/ListingSite_db",
+              "type": "Microsoft.Sql/servers/databases",
+              "apiVersion": "2017-10-01-preview",
+              "dependsOn": [
+                "listingsitedb"
+              ]
             }
           ]
         }
@@ -71,6 +76,6 @@
     }
   ],
   "metadata": {
-    "_dependencyType": "secrets.keyVault"
+    "_dependencyType": "mssql.azure"
   }
 }

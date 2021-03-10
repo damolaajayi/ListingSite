@@ -1,13 +1,3 @@
 {
-  "dependencies": {
-    "secrets1": {
-      "type": "secrets.user"
-    },
-    "mssql1": {
-      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/damolaajayi/databases/HRDB",
-      "type": "mssql.azure",
-      "connectionId": "EmployeeDBConnection",
-      "secretStore": "LocalSecretsFile"
-    }
-  }
+  "dependencies": {}
 }

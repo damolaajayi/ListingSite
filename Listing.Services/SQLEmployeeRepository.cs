@@ -1,7 +1,7 @@
 ﻿using Listing.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Linq;
 
 namespace Listing.Services

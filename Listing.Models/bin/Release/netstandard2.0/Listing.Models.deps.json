@@ -9,6 +9,7 @@
     ".NETStandard,Version=v2.0/": {
       "Listing.Models/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.Analyzers": "5.0.3",
           "NETStandard.Library": "2.0.3",
           "System.ComponentModel.Annotations": "5.0.0"
         },
@@ -16,6 +17,7 @@
           "Listing.Models.dll": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.Analyzers/5.0.3": {},
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "NETStandard.Library/2.0.3": {
         "dependencies": {
@@ -37,6 +39,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Microsoft.EntityFrameworkCore.Analyzers/5.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4sR0ggbrdAZS7f8T5AwHxHa+/b0QyVeMAaplCWihNQJNSgA1mF+bBzdxiL5KpWAN0EZflXuFiQy0BV6FupxITQ==",
+      "path": "microsoft.entityframeworkcore.analyzers/5.0.3",
+      "hashPath": "microsoft.entityframeworkcore.analyzers.5.0.3.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\ListingSite-main\\ListingSite\\ListingSite.csproj": {}
+    "C:\\Users\\User\\Desktop\\employees\\ListingSite\\ListingSite\\ListingSite.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\ListingSite-main\\Listing.Models\\Listing.Models.csproj": {
+    "C:\\Users\\User\\Desktop\\employees\\ListingSite\\Listing.Models\\Listing.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\ListingSite-main\\Listing.Models\\Listing.Models.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\employees\\ListingSite\\Listing.Models\\Listing.Models.csproj",
         "projectName": "Listing.Models",
-        "projectPath": "C:\\Users\\User\\Desktop\\ListingSite-main\\Listing.Models\\Listing.Models.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\employees\\ListingSite\\Listing.Models\\Listing.Models.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\ListingSite-main\\Listing.Models\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\employees\\ListingSite\\Listing.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -65,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\ListingSite-main\\Listing.Services\\Listing.Services.csproj": {
+    "C:\\Users\\User\\Desktop\\employees\\ListingSite\\Listing.Services\\Listing.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\ListingSite-main\\Listing.Services\\Listing.Services.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\employees\\ListingSite\\Listing.Services\\Listing.Services.csproj",
         "projectName": "Listing.Services",
-        "projectPath": "C:\\Users\\User\\Desktop\\ListingSite-main\\Listing.Services\\Listing.Services.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\employees\\ListingSite\\Listing.Services\\Listing.Services.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\ListingSite-main\\Listing.Services\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\employees\\ListingSite\\Listing.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -89,8 +93,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\ListingSite-main\\Listing.Models\\Listing.Models.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\ListingSite-main\\Listing.Models\\Listing.Models.csproj"
+              "C:\\Users\\User\\Desktop\\employees\\ListingSite\\Listing.Models\\Listing.Models.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\employees\\ListingSite\\Listing.Models\\Listing.Models.csproj"
               }
             }
           }
@@ -110,6 +114,10 @@
               "version": "[5.0.3, )"
             },
             "Microsoft.EntityFrameworkCore.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
               "target": "Package",
               "version": "[5.0.3, )"
             },
@@ -157,14 +165,14 @@
         }
       }
     },
-    "C:\\Users\\User\\Desktop\\ListingSite-main\\ListingSite\\ListingSite.csproj": {
+    "C:\\Users\\User\\Desktop\\employees\\ListingSite\\ListingSite\\ListingSite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\ListingSite-main\\ListingSite\\ListingSite.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\employees\\ListingSite\\ListingSite\\ListingSite.csproj",
         "projectName": "ListingSite",
-        "projectPath": "C:\\Users\\User\\Desktop\\ListingSite-main\\ListingSite\\ListingSite.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\employees\\ListingSite\\ListingSite\\ListingSite.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\ListingSite-main\\ListingSite\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\employees\\ListingSite\\ListingSite\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -181,11 +189,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\User\\Desktop\\ListingSite-main\\Listing.Models\\Listing.Models.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\ListingSite-main\\Listing.Models\\Listing.Models.csproj"
+              "C:\\Users\\User\\Desktop\\employees\\ListingSite\\Listing.Models\\Listing.Models.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\employees\\ListingSite\\Listing.Models\\Listing.Models.csproj"
               },
-              "C:\\Users\\User\\Desktop\\ListingSite-main\\Listing.Services\\Listing.Services.csproj": {
-                "projectPath": "C:\\Users\\User\\Desktop\\ListingSite-main\\Listing.Services\\Listing.Services.csproj"
+              "C:\\Users\\User\\Desktop\\employees\\ListingSite\\Listing.Services\\Listing.Services.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\employees\\ListingSite\\Listing.Services\\Listing.Services.csproj"
               }
             }
           }
@@ -200,11 +208,19 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Azure.Extensions.AspNetCore.Configuration.Secrets": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "Azure.Identity": {
               "target": "Package",
               "version": "[1.2.2, )"
             },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
               "target": "Package",
               "version": "[5.0.3, )"
             },

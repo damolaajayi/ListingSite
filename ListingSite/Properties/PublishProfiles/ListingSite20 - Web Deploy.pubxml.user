@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA7ny1mq0sTUK9DjPO3AW7ZQAAAAACAAAAAAAQZgAAAAEAACAAAADAXHGtN+sfJDzLBFqS5JDwbVOQfXbTFHbxX2cBMKTcFQAAAAAOgAAAAAIAACAAAAA3q5UOPsD4ihaOvdhL1RZv5sX599eHYg+VbdXsZf1n94AAAAA1YrAiIT+yvihd9HVB/HOueuzGWyDQZTSTRJNQOg+qGbrJ1M3SYAxxRbmq01S+scjbrPiKYQN+qkA3zo4j4EN11bUxgcCxtYo4m//tSylQjNwGtRZZecYkoSa8JT77PLTXwXf4mU/adQFV6M9vh5oEcjOUROFW52Ku3Gv8CkEaOkAAAAAlc3w+8wH5NtySsNUoS521RDh3/Jui1QRVVvxuubeOCAyzy1N2bHMHkcRGJrNugWzU4+UTvC18Iekj4WywRGgz</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="EmployeeDBConnection">
+      <Value>Data Source=tcp:listingsitedb.database.windows.net,1433%3bInitial Catalog=ListingSite_db%3bUser Id=siralex%40listingsitedb%3bPassword=d%40mola%40j%40yi</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

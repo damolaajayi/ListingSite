@@ -3,10 +3,6 @@
     "mssql1": {
       "type": "mssql",
       "connectionId": "EmployeeDBConnection"
-    },
-    "secrets1": {
-      "type": "secrets",
-      "connectionId": "VaultUri"
     }
   }
 }

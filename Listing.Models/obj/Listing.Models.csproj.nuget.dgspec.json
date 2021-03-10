@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\ListingSite-main\\Listing.Models\\Listing.Models.csproj": {}
+    "C:\\Users\\User\\Desktop\\employees\\ListingSite\\Listing.Models\\Listing.Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\ListingSite-main\\Listing.Models\\Listing.Models.csproj": {
+    "C:\\Users\\User\\Desktop\\employees\\ListingSite\\Listing.Models\\Listing.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\ListingSite-main\\Listing.Models\\Listing.Models.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\employees\\ListingSite\\Listing.Models\\Listing.Models.csproj",
         "projectName": "Listing.Models",
-        "projectPath": "C:\\Users\\User\\Desktop\\ListingSite-main\\Listing.Models\\Listing.Models.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\employees\\ListingSite\\Listing.Models\\Listing.Models.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\ListingSite-main\\Listing.Models\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\employees\\ListingSite\\Listing.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
